@@ -1,4 +1,50 @@
-/* custom navbar backgroud */
-.bg-myWhite {
-  background-color: white;
+body {
+  margin: 0;
+}
+
+ul.topnav {
+  list-style-type: none;
+  /* margin: 30; */
+  /* padding: 30; */
+  overflow: hidden;
+  display: flex;
+  /* background-color: #333; */
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;} */
+
+.right {
+  /* border: 1px red solid; */
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.site-title {
+  font-weight: 500;
+}
+
+.wrap {
+  margin: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
 }

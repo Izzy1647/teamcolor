@@ -1,22 +1,32 @@
 import React from 'react'
-import { Navbar, Container, Nav } from 'react-bootstrap'
 
 import './style.css'
 
 const NavBar = () => {
   return (
-    <>
-      <Navbar bg="myWhite" >
-        <Container>
-          <Navbar.Brand href="#home">球队颜色</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">CBA</Nav.Link>
-            <Nav.Link href="#features">中超</Nav.Link>
-            <Nav.Link href="#pricing">其他联赛</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+    <div className='wrap'>
+      <ul className="topnav">
+        <li>
+          <a className="site-title" href="home">
+            球队颜色
+          </a>
+        </li>
+        <div className="right">
+          <li>
+            <a href="cba">CBA</a>
+          </li>
+          <li>
+            <a href="csa">中超</a>
+          </li>
+          <li>
+            <a href="esports">电竞</a>
+          </li>
+          <li>
+            <a href="more">更多</a>
+          </li>
+        </div>
+      </ul>
+    </div>
   )
 }
 
