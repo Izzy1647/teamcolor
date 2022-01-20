@@ -1,34 +1,24 @@
-import React from "react"
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom"
-import MainPage from "./components/mainPage"
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import MainPage from './modules/Mainpage'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 export default function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-        </Routes>
-      </div>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
     </Router>
-  );
+  )
+}
+
+
+function Home() {
+  return <div>home</div>
 }

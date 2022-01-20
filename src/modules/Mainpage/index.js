@@ -1,11 +1,11 @@
 import React from 'react'
-
+// import { }
 
 const MainPage = () => {
   return (
     <div>
       <h1>
-        mainpage
+        mainPage
       </h1>
     </div>
   )
