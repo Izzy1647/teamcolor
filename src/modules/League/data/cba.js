@@ -6,7 +6,7 @@ export const cbaList = [
   },
   {
     name: "北京鸭",
-    theme: "#E51D2E",
+    theme: "#7A263A",
     link: "/team/what"
   }
 ]
