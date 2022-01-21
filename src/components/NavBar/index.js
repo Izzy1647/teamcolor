@@ -17,7 +17,7 @@ const NavBar = () => {
             <Link to="/cba">CBA</Link>
           </li>
           <li>
-            <Link to="/csa">中超</Link>
+            <Link to="/csl">中超</Link>
           </li>
           <li>
             <Link to="/esports">电竞</Link>

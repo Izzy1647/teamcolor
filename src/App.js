@@ -2,8 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './modules/Home'
-
-import 'antd/dist/antd.css'
+import League from './modules/League'
 
 export default function App() {
   return (
@@ -11,8 +10,8 @@ export default function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cba" element={<Cba />} />
-        <Route path="/csa" element={<Csa />} />
+        <Route path="/cba" element={<League type="cba" />} />
+        <Route path="/csl" element={<Csl />} />
         <Route path="/esports" element={<Esports />} />
         <Route path="/more" element={<More />} />
       </Routes>
@@ -24,7 +23,7 @@ function Cba() {
   return <div>cba</div>
 }
 
-function Csa() {
+function Csl() {
   return <div>csa</div>
 }
 

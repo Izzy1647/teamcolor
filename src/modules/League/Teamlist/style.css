@@ -1,0 +1,14 @@
+.team-block {
+  border: 1px yellow solid;
+  margin-bottom: 6px;
+  border-bottom: 4px solid #000;
+  border-radius: 4px;
+}
+
+.team-title {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 10px;
+}
