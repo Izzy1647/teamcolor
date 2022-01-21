@@ -1,12 +1,10 @@
 import React from 'react'
-// import { }
+import SearchBar from '../../components/SearchBar'
 
 const MainPage = () => {
   return (
     <div>
-      <h1>
-        mainPage
-      </h1>
+      <SearchBar />
     </div>
   )
 }

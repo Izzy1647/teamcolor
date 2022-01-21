@@ -8,7 +8,7 @@ const NavBar = () => {
     <div className="wrap">
       <ul className="topnav">
         <li>
-          <Link to="/home" className="site-title">
+          <Link to="/" className="site-title">
             球队颜色
           </Link>
         </li>

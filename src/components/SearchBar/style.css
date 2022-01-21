@@ -1,0 +1,35 @@
+.searchbar-container {
+  height: 16rem;
+  /* width: 100px; */
+  background-color: #034694;
+  margin: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.search-widget-wrap {
+  width: 100%;
+  height: 60%;
+  margin: 0 2rem 0 2rem;
+}
+
+.search-widget-title {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.search-form-input {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 0;
+  color: #000;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.625;
+  padding: 15px;
+  margin-top: 1rem;
+  width: 100%;
+  outline: none;
+}

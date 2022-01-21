@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
-import MainPage from './modules/Mainpage'
+import Home from './modules/Home'
 
 import 'antd/dist/antd.css'
 
@@ -10,8 +10,7 @@ export default function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/cba" element={<Cba />} />
         <Route path="/csa" element={<Csa />} />
         <Route path="/esports" element={<Esports />} />
@@ -19,10 +18,6 @@ export default function App() {
       </Routes>
     </Router>
   )
-}
-
-function Home() {
-  return <div>home</div>
 }
 
 function Cba() {
