@@ -9,29 +9,15 @@ export default function App() {
   return (
     <Router>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cba" element={<League type="cba" />} />
-        <Route path="/csl" element={<Oops />} />
-        <Route path="/esports" element={<Oops />} />
-        <Route path="/more" element={<Oops />} />
-      </Routes>
+      <div style={{ padding: '3.8rem' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cba" element={<League type="cba" />} />
+          <Route path="/csl" element={<Oops />} />
+          <Route path="/esports" element={<Oops />} />
+          <Route path="/more" element={<Oops />} />
+        </Routes>
+      </div>
     </Router>
   )
-}
-
-function Cba() {
-  return <div>cba</div>
-}
-
-function Csl() {
-  return <div>csa</div>
-}
-
-function Esports() {
-  return <div>esports</div>
-}
-
-function More() {
-  return <div>more</div>
 }
