@@ -61,7 +61,7 @@ export const cbaTeams = [
   },
   {
     name: '苏州肯帝亚',
-    theme: '#000',
+    theme: '#000000',
     link: '/cba/suzhou'
   },
   {
@@ -71,7 +71,7 @@ export const cbaTeams = [
   },
   {
     name: '新疆伊力王酒',
-    theme: '#fff',
+    theme: '#ffffff',
     link: '/cba/xinjiang'
   },
   {
