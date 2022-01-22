@@ -1,7 +1,6 @@
 import React from 'react'
 import Teamlist from './Teamlist'
-
-import { cbaList } from './data/cba'
+import { cbaTeams } from '../../data/cba/teams'
 
 import './style.css'
 
@@ -16,7 +15,7 @@ const League = ({ type }) => {
     <>
       <div className="teamlist-container">
         <h1>{typeMap[type]}</h1>
-        {type === 'cba' && <Teamlist teams={cbaList} />}
+        {type === 'cba' && <Teamlist teams={cbaTeams} />}
       </div>
     </>
   )
