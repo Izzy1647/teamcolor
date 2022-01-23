@@ -77,6 +77,6 @@ export const cbaTeams = [
   {
     name: '浙江稠州金租',
     theme: '#9D2036',
-    link: '/cba/zhejiangx'
+    link: '/cba/zhejiang'
   }
 ]

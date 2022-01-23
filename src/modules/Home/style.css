@@ -1,0 +1,8 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-image {
+  margin: 2rem;
+}
