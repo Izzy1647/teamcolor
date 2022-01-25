@@ -1,8 +1,9 @@
 .team-block {
-  border: 1px yellow solid;
-  margin-bottom: 6px;
+  margin: 6px;
   border-bottom: 4px solid #000;
   border-radius: 4px;
+  flex: 40%;
+  width: 100%;
 }
 
 .team-title {

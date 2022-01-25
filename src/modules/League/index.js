@@ -13,9 +13,11 @@ const typeMap = {
 const League = ({ type }) => {
   return (
     <>
-      <div className="teamlist-container">
+      <div className="teamlist-wrapper">
         <h1>{typeMap[type]}</h1>
-        {type === 'cba' && <Teamlist teams={cbaTeams} />}
+        <div className='teamlist-container'>
+          {type === 'cba' && <Teamlist teams={cbaTeams} />}
+        </div>
       </div>
     </>
   )

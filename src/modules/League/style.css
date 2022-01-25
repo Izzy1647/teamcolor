@@ -1,5 +1,10 @@
-.teamlist-container {
+.teamlist-wrapper {
   width: 60%;
   height: 600px;
   margin: 3.6rem auto;
+}
+
+.teamlist-container {
+  display: flex;
+  flex-wrap: wrap;
 }
