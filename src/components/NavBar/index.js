@@ -6,7 +6,7 @@ import './style.css'
 const NavBar = () => {
   return (
     <div className="wrap">
-      <ul className="topnav">
+      <ul className="topnav" style={{margin: 6}}>
         <li>
           <Link to="/" className="site-title">
             球队颜色

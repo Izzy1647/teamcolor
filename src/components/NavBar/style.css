@@ -4,7 +4,6 @@ body {
 
 ul.topnav {
   list-style-type: none;
-  /* margin: 30; */
   /* padding: 30; */
   overflow: hidden;
   display: flex;
@@ -24,9 +23,9 @@ ul.topnav li a {
   font-size: 20px;
 }
 
-/* ul.topnav li a:hover:not(.active) {background-color: #111;}
+/* ul.topnav li a:hover:not(.active) {background-color: #111;} */
 
-ul.topnav li a.active {background-color: #04AA6D;} */
+/* ul.topnav li a.active {background-color: #04AA6D;} */
 
 .right {
   /* border: 1px red solid; */
@@ -43,6 +42,7 @@ ul.topnav li a.active {background-color: #04AA6D;} */
   top: 0;
   background-color: white;
   width: 100%;
+  box-shadow: 0px 2px 12px grey;
 }
 
 @media screen and (max-width: 600px) {
