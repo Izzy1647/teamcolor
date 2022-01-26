@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { cbaTeams } from '../../data/cba/teams'
+import Colorblock from './Colorblock'
 
 import './style.css'
 
@@ -17,7 +18,9 @@ const Detail = () => {
         width={200}
         src={`../logos/cba/${teamInfo.key}.png`}
         alt="logo"
+        style={{ margin: '1rem 0' }}
       />
+      <Colorblock colors={teamInfo.colors} />
     </div>
   )
 }

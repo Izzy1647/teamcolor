@@ -1,0 +1,16 @@
+/* .colorblock-container {
+  font-family: 'roboto mono,monospace';
+  text-transform: 'uppercase';
+  width: '50%';
+  height: '120px';
+} */
+
+.color-data-wrapper {
+  padding: 1rem;
+}
+
+.color-data-content {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
