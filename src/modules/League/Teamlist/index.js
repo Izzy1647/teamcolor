@@ -26,7 +26,7 @@ const Teamlist = ({ teams }) => {
             className="team-block"
             style={{ background: team.theme }}
           >
-            <Link to={team.link}>
+            <Link to={team.link} state={{ league: 'cba' }}>
               <p
                 className="team-title"
                 style={titleStyle(isLightColor(team.theme))}

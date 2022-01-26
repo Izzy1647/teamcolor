@@ -1,0 +1,15 @@
+.team-detail-container {
+  margin: 3rem 10rem;
+  /* border: red solid 2px; */
+}
+
+.team-name {
+  margin-bottom: 16px;
+
+  /* SVG support allows for logos on this element
+     background-image set dynamically w/javascript */
+  padding-top: 125px;
+  background-size: 125px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}

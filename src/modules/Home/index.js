@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchBar from '../../components/SearchBar'
-import cbaLogo from '../../data/cba/cba_logo.png'
-import cslLogo from '../../data/csl/csl_logo.png'
+import cbaLogo from '../../data/cba/logos/cba_logo.png'
+import cslLogo from '../../data/csl/logos/csl_logo.png'
 
 
 import './style.css'
