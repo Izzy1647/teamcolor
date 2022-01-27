@@ -42,7 +42,7 @@ ul.topnav li a {
   top: 0;
   background-color: white;
   width: 100%;
-  box-shadow: 0px 2px 12px grey;
+  /* box-shadow: 0px 2px 12px grey; */
 }
 
 @media screen and (max-width: 600px) {

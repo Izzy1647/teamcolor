@@ -15,9 +15,10 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cba" element={<League type="cba" />} />
           <Route path="/cba/:team" element={<Detail />} />
-          <Route path="/csl" element={<Oops />} />
-          <Route path="/esports" element={<Oops />} />
-          <Route path="/more" element={<Oops />} />
+          <Route path="/csl" element={<Oops type="noSupport"/>} />
+          <Route path="/esports" element={<Oops type="noSupport" />} />
+          <Route path="/more" element={<Oops type="noSupport"/>} />
+          <Route path="/no-match" element={<Oops type="noMatch"/>} />
         </Routes>
       </div>
     </Router>
