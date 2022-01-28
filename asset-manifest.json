@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/teamcolor/static/css/main.6d40c04e.css",
-    "main.js": "/teamcolor/static/js/main.3bbec819.js",
+    "main.css": "/teamcolor/static/css/main.fab4c1ef.css",
+    "main.js": "/teamcolor/static/js/main.e4e3c332.js",
     "static/js/787.47a61495.chunk.js": "/teamcolor/static/js/787.47a61495.chunk.js",
     "static/media/cba_logo.png": "/teamcolor/static/media/cba_logo.69d7c6d1e27cfeb8891c.png",
     "index.html": "/teamcolor/index.html",
-    "main.6d40c04e.css.map": "/teamcolor/static/css/main.6d40c04e.css.map",
-    "main.3bbec819.js.map": "/teamcolor/static/js/main.3bbec819.js.map",
+    "main.fab4c1ef.css.map": "/teamcolor/static/css/main.fab4c1ef.css.map",
+    "main.e4e3c332.js.map": "/teamcolor/static/js/main.e4e3c332.js.map",
     "787.47a61495.chunk.js.map": "/teamcolor/static/js/787.47a61495.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d40c04e.css",
-    "static/js/main.3bbec819.js"
+    "static/css/main.fab4c1ef.css",
+    "static/js/main.e4e3c332.js"
   ]
 }
