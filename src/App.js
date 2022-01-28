@@ -8,7 +8,7 @@ import Oops from './modules/Oops'
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <NavBar />
       <div style={{ padding: '3.8rem' }}>
         <Routes>
