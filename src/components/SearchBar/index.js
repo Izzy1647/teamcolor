@@ -10,8 +10,10 @@ const SearchBar = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const team = document.getElementById('team').value
-    const redirect = search(team)
-    navigate(redirect)
+    const [redirect, league] = search(team)
+
+    // make sure league info is added in state as it's required by team detail page
+    navigate(redirect, { state: { league} })
   }
 
   return (

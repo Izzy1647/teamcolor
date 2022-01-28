@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { cbaTeams } from '../../data/cba/teams'
 import Colorblock from './Colorblock'
 
@@ -7,8 +8,8 @@ import './style.css'
 
 const Detail = () => {
   const { team } = useParams()
-  // const { state } = useLocation()
-  // const { league } = state
+  const { state } = useLocation()
+  const { league } = state
   const teamInfo = cbaTeams.find(item => item.key === team)
   return (
     <div className="team-detail-container">
@@ -16,7 +17,7 @@ const Detail = () => {
       <img
         height={200}
         width={200}
-        src={`../logos/cba/${teamInfo.key}.png`}
+        src={`../logos/${league}/${teamInfo.key}.png`}
         alt="logo"
         style={{ margin: '1rem 0' }}
       />
