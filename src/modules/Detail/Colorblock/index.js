@@ -1,5 +1,5 @@
 import React from 'react'
-import { hexToRgb } from '../../../utils/hex2rgb'
+import { hexToCMYK, hexToRgb } from '../../../utils/convertColor'
 import isLightColor from '../../../utils/lightColor'
 
 import './style.css'
@@ -23,7 +23,9 @@ const Colorblock = ({ colors }) => {
       >
         <div className='color-data-wrapper'>
           <p className="color-data-content">HEX: {color}</p>
-          <p className="color-data-content">RGB: {hexToRgb(color)}</p>
+          <p className="color-data-content">RGB: {`(${hexToRgb(color).join(',')})`}</p>
+          <p className="color-data-content">CMYK: {`(${hexToCMYK(color).join(',')})`}</p>
+
         </div>
       </div>
     )
