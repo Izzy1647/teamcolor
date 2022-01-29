@@ -14,7 +14,7 @@ ul.topnav li {
   float: left;
 }
 
-ul.topnav li a {
+ul.topnav li a,span {
   display: block;
   color: black;
   text-align: center;
@@ -49,5 +49,9 @@ ul.topnav li a {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
+  }
+
+  .right {
+    display: none;
   }
 }
