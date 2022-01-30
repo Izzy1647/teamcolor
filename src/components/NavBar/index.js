@@ -20,7 +20,7 @@ const menu = (
 )
 
 const NavBar = () => {
-  const isMobileScreen = window.matchMedia('(max-width:500px)').matches
+  const isMobileScreen = window.matchMedia('(max-width:600px)').matches
 
   return (
     <div className="wrap">

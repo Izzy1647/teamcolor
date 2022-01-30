@@ -13,3 +13,12 @@
   background-repeat: no-repeat;
   background-position: center 0;
 }
+
+@media screen and (max-width: 600px) {
+  .team-detail-container {
+    text-align: center;
+    margin: 1rem;
+    padding-top: 20px;
+    padding-top: 6rem;
+  }
+}

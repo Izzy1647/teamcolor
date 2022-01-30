@@ -7,7 +7,7 @@ import League from './modules/League'
 import Oops from './modules/Oops'
 
 export default function App() {
-  const isMobileScreen = window.matchMedia('(max-width:500px)').matches
+  const isMobileScreen = window.matchMedia('(max-width:600px)').matches
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <NavBar />
