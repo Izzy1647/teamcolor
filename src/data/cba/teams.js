@@ -1,3 +1,11 @@
+/**
+ * key: a unique key of the team - if you are adding a new team, leave it and I will handle this.
+ * name: the short version of the team name, shown on team card.
+ * full: the official full name of the team, shown on detail page.
+ * theme: the theme(main) color of the team
+ * link: for page redirecting - if you are adding a new team, leave it and I will handle this.
+ * colors: all related color of the team, home/away/third shirt color, etc.
+ */
 export const cbaTeams = [
   {
     key: 'shanghai',
