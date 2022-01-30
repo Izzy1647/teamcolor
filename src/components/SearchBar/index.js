@@ -5,6 +5,7 @@ import search from '../../utils/search'
 import './style.css'
 
 const SearchBar = () => {
+  const isMobileScreen = window.matchMedia('(max-width:600px)').matches
   const navigate = useNavigate()
 
   const handleSubmit = e => {
@@ -13,7 +14,7 @@ const SearchBar = () => {
     const [redirect, league] = search(team)
 
     // make sure league info is added in state as it's required by team detail page
-    navigate(redirect, { state: { league} })
+    navigate(redirect, { state: { league } })
   }
 
   return (
@@ -27,6 +28,11 @@ const SearchBar = () => {
             id="team"
             type="text"
           />
+          {isMobileScreen && (
+            <>
+              <p style={{ color: 'white', marginTop: '12px', fontSize: '18px'}} onClick={handleSubmit}>搜索{">>"}</p>
+            </>
+          )}
         </form>
       </div>
     </section>
