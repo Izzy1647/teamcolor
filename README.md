@@ -1,4 +1,5 @@
 # Team color
+See: https://izzy1647.github.io/teamcolor/
 
 Team color is built for CBA (Chinese Basketball Association) fans to look up for the theme color of the team that they support (...or hate!)
 
