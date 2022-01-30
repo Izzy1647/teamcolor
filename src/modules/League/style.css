@@ -8,3 +8,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 600px) {
+  .teamlist-wrapper {
+    width: 80%;
+    margin: 4rem auto;
+    padding-top: 1.4rem;
+  }
+
+  .teamlist-title {
+    display: none;
+  }
+}
