@@ -1,0 +1,10 @@
+.search-result-container {
+  margin: 3rem
+}
+
+@media screen and (max-width: 600px) {
+  .search-result-container {
+    margin: 1rem;
+    padding-top: 4.6rem;
+  }
+}

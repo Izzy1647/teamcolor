@@ -8,6 +8,11 @@ const titleStyle = isLightColor => {
   return isLightColor ? { color: 'black' } : { color: 'white' }
 }
 
+/**
+ * 
+ * @param {Array} [{*theme, *link, *name}]
+ * @returns 
+ */
 const Teamlist = ({ teams }) => {
   return (
     <>

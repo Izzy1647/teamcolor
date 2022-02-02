@@ -13,13 +13,24 @@ const SearchBar = () => {
     const team = document.getElementById('team').value
     const searchRes = search(team)
 
-    if (searchRes.length) {
+    // no match result for searched string
+    if (!searchRes.length) {
+      navigate('/no-match')
+    }
+
+    // exact one match
+    if (searchRes.length === 1) {
       const { league, link } = searchRes[0]
 
       // make sure league info is added in state as it's required by team detail page
       navigate(link, { state: { league } })
-    } else {
-      navigate('/no-match')
+    }
+
+    // multiple match results
+    if (searchRes.length > 1) {
+      navigate('/results', {state: {
+        teams: searchRes
+      }})
     }
   }
 
