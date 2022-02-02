@@ -11,10 +11,16 @@ const SearchBar = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const team = document.getElementById('team').value
-    const [redirect, league] = search(team)
+    const searchRes = search(team)
 
-    // make sure league info is added in state as it's required by team detail page
-    navigate(redirect, { state: { league } })
+    if (searchRes.length) {
+      const { league, link } = searchRes[0]
+
+      // make sure league info is added in state as it's required by team detail page
+      navigate(link, { state: { league } })
+    } else {
+      navigate('/no-match')
+    }
   }
 
   return (
@@ -30,7 +36,12 @@ const SearchBar = () => {
           />
           {isMobileScreen && (
             <>
-              <p style={{ color: 'white', marginTop: '12px', fontSize: '18px'}} onClick={handleSubmit}>搜索{">>"}</p>
+              <p
+                style={{ color: 'white', marginTop: '12px', fontSize: '18px' }}
+                onClick={handleSubmit}
+              >
+                搜索{'>>'}
+              </p>
             </>
           )}
         </form>
