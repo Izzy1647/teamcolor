@@ -5,7 +5,7 @@ import isLightColor from '../../../utils/lightColor'
 import './style.css'
 
 const Colorblock = ({ colors }) => {
-  const isMobileScreen = window.matchMedia('(max-width:600px)').matches
+  // const isMobileScreen = window.matchMedia('(max-width:600px)').matches
   return colors.map((color, index) => {
     return (
       // is the long inline stylesheet a technical debt? ...or not?
@@ -13,7 +13,7 @@ const Colorblock = ({ colors }) => {
         key={index}
         className="colorblock-container"
         style={{
-          width: isMobileScreen ? '100%' : '50%',
+          width: '100%',
           color: isLightColor(color) ? 'black' : 'white',
           backgroundColor: color,
           fontFamily: 'roboto mono,monospace',

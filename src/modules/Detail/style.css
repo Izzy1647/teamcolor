@@ -1,6 +1,11 @@
 .team-detail-container {
   margin: 3rem 10rem;
   /* border: red solid 2px; */
+  display: flex;
+}
+
+.team-detail-left {
+  width: 50%;
 }
 
 .team-name {
@@ -20,5 +25,9 @@
     margin: 1rem;
     padding-top: 20px;
     padding-top: 6rem;
+  }
+
+  .team-detail-left {
+    width: 100%;
   }
 }
