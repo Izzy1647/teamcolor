@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, useLocation } from 'react-router-dom'
-import TeamShirt from '../../components/TeamShirt'
+// import TeamShirt from '../../components/TeamShirt'
 import { cbaTeams } from '../../data/cba/teams'
 import Colorblock from './Colorblock'
 
@@ -24,9 +24,9 @@ const Detail = () => {
         />
         <Colorblock colors={teamInfo.colors} />
       </div>
-      <div className='team-detail-right'>
+      {/* <div className='team-detail-right'>
         <TeamShirt />
-      </div>
+      </div> */}
     </div>
   )
 }
