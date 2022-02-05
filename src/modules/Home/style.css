@@ -6,3 +6,14 @@
 .logo-image {
   margin: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-image {
+    margin: 2.4rem auto 0;
+  }
+}

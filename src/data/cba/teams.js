@@ -13,7 +13,7 @@ export const cbaTeams = [
     full: '上海久事大鲨鱼俱乐部',
     theme: '#081864',
     link: '/cba/shanghai',
-    colors: ['#081864', '#FB6914', '#000000']
+    colors: ['#081864', '#EB6715', '#FFFFFF']
   },
   {
     key: 'beikong',
@@ -85,7 +85,7 @@ export const cbaTeams = [
     full: '青岛国信海天雄鹰俱乐部',
     theme: '#0E2960',
     link: '/cba/qingdao',
-    colors: []
+    colors: ['#0E2960']
   },
   {
     key: 'shanxi',

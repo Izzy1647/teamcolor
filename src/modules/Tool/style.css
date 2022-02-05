@@ -1,0 +1,23 @@
+.converter-container {
+  margin: 3rem 10rem;
+}
+
+.converter-form-group {
+  margin: 1rem 0;
+}
+
+.converter-button {
+  margin: 0 1rem;
+  width: 10%
+}
+
+@media screen and (max-width: 600px) {
+  .converter-container {
+    margin: 6rem 1rem 0;
+  }
+
+  .converter-button {
+    width: 30%;
+  }
+}
+

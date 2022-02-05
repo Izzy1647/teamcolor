@@ -41,7 +41,7 @@ export function rgbToHex(r, g, b) {
     let hex = c.toString(16)
     return hex.length === 1 ? '0' + hex : hex
   }
-  return '#' + decToHex(r) + decToHex(g) + decToHex(b)
+  return r && g && b ? '#' + decToHex(r) + decToHex(g) + decToHex(b) : null
 }
 
 /**
