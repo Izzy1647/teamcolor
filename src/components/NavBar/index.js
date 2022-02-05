@@ -17,7 +17,7 @@ const menu = (
       <Link to="/esports">电竞</Link>
     </Menu.Item>
     <Menu.Item key="3">
-      <Link to="/tool">工具</Link>
+      <Link to="/tools">工具</Link>
     </Menu.Item>
   </Menu>
 )
@@ -44,7 +44,7 @@ const NavBar = () => {
             <Link to="/esports">电竞</Link>
           </li>
           <li>
-            <Link to="/tool">工具</Link>
+            <Link to="/tools">工具</Link>
           </li>
         </div>
         {isMobileScreen && (

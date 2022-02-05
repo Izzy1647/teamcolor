@@ -1,0 +1,14 @@
+.tools-container {
+  margin: 3rem 1rem;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .tools-container {
+    margin: 6rem 1rem 0;
+  }
+  /* 
+  .converter-button {
+    width: 30%;
+  } */
+}

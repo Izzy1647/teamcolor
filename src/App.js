@@ -6,7 +6,7 @@ import Home from './modules/Home'
 import League from './modules/League'
 import Oops from './modules/Oops'
 import SearchResults from './modules/SearchResults'
-import Tool from './modules/Tool'
+import Tools from './modules/Tools'
 
 export default function App() {
   const isMobileScreen = window.matchMedia('(max-width:600px)').matches
@@ -20,7 +20,7 @@ export default function App() {
           <Route path="/cba/:team" element={<Detail />} />
           <Route path="/csl" element={<Oops type="noSupport" />} />
           <Route path="/esports" element={<Oops type="noSupport" />} />
-          <Route path="/tool" element={<Tool />} />
+          <Route path="/tools" element={<Tools />} />
           <Route path="/more" element={<Oops type="noSupport" />} />
           <Route path="/no-match" element={<Oops type="noMatch" />} />
           <Route path="/results" element={<SearchResults />} />
