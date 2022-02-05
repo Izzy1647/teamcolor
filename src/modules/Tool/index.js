@@ -35,7 +35,7 @@ const Tool = () => {
     if (lastModified === 'rgb') {
       let [r, g, b] = rgb.split(' ').map(str => Number(str))
       let hex = rgbToHex(r, g, b)
-      setHEX(hex ? hex : 'illegal input')
+      setHEX(hex ? hex.toUpperCase() : 'illegal input')
     }
   }
 
