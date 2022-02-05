@@ -26,6 +26,25 @@ export function hexToRgb(hex) {
 }
 
 /**
+ * RGB to HEX
+ * Convert a rgb color to hex string
+ *
+ * @param {Number} r
+ * @param {Number} g
+ * @param {Number} b
+ * @returns {String} hex string like '#ff00ff'
+ *
+ * see: https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+ */
+export function rgbToHex(r, g, b) {
+  const decToHex = c => {
+    let hex = c.toString(16)
+    return hex.length === 1 ? '0' + hex : hex
+  }
+  return '#' + decToHex(r) + decToHex(g) + decToHex(b)
+}
+
+/**
  * HEX to CMYK
  * Convert HEX color to a CMYK array
  * @param {string} hex
