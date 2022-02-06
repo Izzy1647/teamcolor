@@ -1,6 +1,7 @@
 import React from 'react'
 import Teamlist from './Teamlist'
 import { cbaTeams } from '../../data/cba/teams'
+import { cslTeams } from '../../data/csl/teams'
 
 import './style.css'
 
@@ -14,10 +15,10 @@ const League = ({ type }) => {
   return (
     <>
       <div className="teamlist-wrapper">
-        <h1 className='teamlist-title'>{typeMap[type]}</h1>
-        <div className='teamlist-container'>
-          {type === 'cba' && <Teamlist teams={cbaTeams} />}
-          {/* {type === 'csl' && <Teamlist teams={cbaTeams} />} */}
+        <h1 className="teamlist-title">{typeMap[type]}</h1>
+        <div className="teamlist-container">
+          {type === 'cba' && <Teamlist teams={cbaTeams} league='cba' />}
+          {type === 'csl' && <Teamlist teams={cslTeams} league='csl' />}
         </div>
       </div>
     </>

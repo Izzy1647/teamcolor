@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams, useLocation } from 'react-router-dom'
 // import TeamShirt from '../../components/TeamShirt'
 import { cbaTeams } from '../../data/cba/teams'
+import { cslTeams } from '../../data/csl/teams'
 import Colorblock from './Colorblock'
 
 import './style.css'
@@ -10,10 +11,19 @@ const Detail = () => {
   const { team } = useParams()
   const { state } = useLocation()
   const { league } = state
-  const teamInfo = cbaTeams.find(item => item.key === team)
+
+  let teamInfo
+  if (league === 'cba') {
+    teamInfo = cbaTeams.find(item => item.key === team)
+  }
+
+  if (league === 'csl') {
+    teamInfo = cslTeams.find(item => item.key === team)
+  }
+
   return (
     <div className="team-detail-container">
-      <div className='team-detail-left'>
+      <div className="team-detail-left">
         <h1>{teamInfo.full ? teamInfo.full : ''}</h1>
         <img
           height={200}

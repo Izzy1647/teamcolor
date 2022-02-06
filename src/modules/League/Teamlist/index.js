@@ -9,11 +9,11 @@ const titleStyle = isLightColor => {
 }
 
 /**
- * 
+ *
  * @param {Array} [{*theme, *link, *name}]
- * @returns 
+ * @returns
  */
-const Teamlist = ({ teams }) => {
+const Teamlist = ({ teams, league }) => {
   return (
     <>
       {teams.map((team, index) => {
@@ -23,7 +23,7 @@ const Teamlist = ({ teams }) => {
             className="team-block"
             style={{ background: team.theme }}
           >
-            <Link to={team.link} state={{ league: 'cba' }}>
+            <Link to={team.link} state={{ league }}>
               <p
                 className="team-title"
                 style={titleStyle(isLightColor(team.theme))}
