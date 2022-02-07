@@ -70,7 +70,7 @@ export const cslTeams = [
     theme: '#EA3727',
     link: '/csl/guangzhou',
     colors: ['#EA3727', '#EEE786']
-  },
+  }
   // {
   //   key: 'guangzhoucheng',
   //   name: '广州城',
@@ -79,5 +79,4 @@ export const cslTeams = [
   //   link: '/csl/guangzhoucheng',
   //   colors: ['#2B65A9', '#EEE786']
   // },
-  
 ]
