@@ -25,7 +25,6 @@ export default function search(team) {
       })
   }
 
-
   const cbaRes = searchTeamInLeague(team, 'cba')
   const cslRes = searchTeamInLeague(team, 'csl')
 

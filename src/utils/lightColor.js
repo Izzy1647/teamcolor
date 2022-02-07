@@ -2,7 +2,7 @@
  * check if a color(in hex format) is "light" or "dark"
  *
  * @param {string} color - In hex format, i.e., "#FFFFFF"
- * @returns {boolean} 
+ * @returns {boolean}
  */
 export default function isLightColor(color) {
   const hex = color.replace('#', '')

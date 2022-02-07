@@ -16,7 +16,12 @@ const Oops = ({ type }) => {
       {type === 'noMatch' && (
         <>
           <p>没有符合搜索条件的球队:)</p>
-          <p onClick={returnToHome} style={{"cursor": 'pointer', color:'#102233'}}>👈 返回主页重新搜索</p>
+          <p
+            onClick={returnToHome}
+            style={{ cursor: 'pointer', color: '#102233' }}
+          >
+            👈 返回主页重新搜索
+          </p>
         </>
       )}
     </div>

@@ -3,7 +3,6 @@ import SearchBar from '../../components/SearchBar'
 import cbaLogo from '../../data/cba/logos/cba_logo.png'
 import cslLogo from '../../data/csl/logos/csl_logo.png'
 
-
 import './style.css'
 
 const MainPage = () => {
@@ -11,8 +10,20 @@ const MainPage = () => {
     <div>
       <SearchBar />
       <div className="logo-container">
-        <img className='logo-image' src={cbaLogo} height={128} width={100} alt="cba" />
-        <img className='logo-image' src={cslLogo} height={124} width={200} alt="csl" />
+        <img
+          className="logo-image"
+          src={cbaLogo}
+          height={128}
+          width={100}
+          alt="cba"
+        />
+        <img
+          className="logo-image"
+          src={cslLogo}
+          height={124}
+          width={200}
+          alt="csl"
+        />
       </div>
     </div>
   )

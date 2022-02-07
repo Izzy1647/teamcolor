@@ -48,7 +48,7 @@ const NavBar = () => {
           </li>
         </div>
         {isMobileScreen && (
-          <li style={{"marginLeft": "auto"}}>
+          <li style={{ marginLeft: 'auto' }}>
             <Dropdown
               overlay={menu}
               trigger={['click']}

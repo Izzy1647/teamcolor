@@ -28,9 +28,11 @@ const SearchBar = () => {
 
     // multiple match results
     if (searchRes.length > 1) {
-      navigate('/results', {state: {
-        teams: searchRes
-      }})
+      navigate('/results', {
+        state: {
+          teams: searchRes
+        }
+      })
     }
   }
 
