@@ -50,6 +50,7 @@ export function rgbToHex(r, g, b) {
 /**
  * HEX to CMYK
  * Convert HEX color to a CMYK array
+ * here hex would be strictly legal as it's an inner function (not exposed)
  * @param {string} hex
  * @returns {Array} [c,m,y,k]
  *
