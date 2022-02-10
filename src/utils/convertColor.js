@@ -37,11 +37,14 @@ export function hexToRgb(hex) {
  * see: https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
  */
 export function rgbToHex(r, g, b) {
+  if (arguments.length !== 3 || r > 255 || g > 255 || b > 255) {
+    return null
+  }
   const decToHex = c => {
     let hex = c.toString(16)
     return hex.length === 1 ? '0' + hex : hex
   }
-  return r && g && b ? '#' + decToHex(r) + decToHex(g) + decToHex(b) : null
+  return `#${decToHex(r)}${decToHex(g)}${decToHex(b)}`.toUpperCase()
 }
 
 /**

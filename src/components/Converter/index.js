@@ -33,9 +33,8 @@ const Converter = () => {
     }
 
     if (lastModified === 'rgb') {
-      let [r, g, b] = rgb.split(' ').map(str => Number(str))
-      let hex = rgbToHex(r, g, b)
-      setHEX(hex ? hex.toUpperCase() : 'illegal input')
+      let hex = rgbToHex(...rgb.split(' ').map(str => Number(str)))
+      setHEX(hex ? hex : 'illegal input')
     }
   }
   return (
