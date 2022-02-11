@@ -1,7 +1,6 @@
 # Team color
 
-See: https://teamcolor.vercel.app/
-Or: https://izzy1647.github.io/teamcolor/
+See: https://teamcolor.vercel.app
 
 Team color is built for CBA (Chinese Basketball Association) and CSL (Chinese Super League) fans to look up for the theme color of the team that they support (...or hate!)
 
@@ -29,5 +28,5 @@ Team color data are stored in `/src/data/${league}/teams.js`, as an array of obj
 
 ## Possible future tasks
 
-- adapt esports leagues in China (kpl, etc.)
-- multi-language support
+- Adapt esports leagues in China (kpl, etc.)
+- Multi-language support
