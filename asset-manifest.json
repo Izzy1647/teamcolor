@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/teamcolor/static/css/main.9691c2c4.css",
-    "main.js": "/teamcolor/static/js/main.477af1e2.js",
+    "main.js": "/teamcolor/static/js/main.2e59d08a.js",
     "static/js/787.47a61495.chunk.js": "/teamcolor/static/js/787.47a61495.chunk.js",
     "static/media/csl_logo.png": "/teamcolor/static/media/csl_logo.9202cb306dd4ed11abf9.png",
     "static/media/cba_logo.png": "/teamcolor/static/media/cba_logo.69d7c6d1e27cfeb8891c.png",
     "index.html": "/teamcolor/index.html",
     "main.9691c2c4.css.map": "/teamcolor/static/css/main.9691c2c4.css.map",
-    "main.477af1e2.js.map": "/teamcolor/static/js/main.477af1e2.js.map",
+    "main.2e59d08a.js.map": "/teamcolor/static/js/main.2e59d08a.js.map",
     "787.47a61495.chunk.js.map": "/teamcolor/static/js/787.47a61495.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9691c2c4.css",
-    "static/js/main.477af1e2.js"
+    "static/js/main.2e59d08a.js"
   ]
 }
