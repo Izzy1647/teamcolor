@@ -18,11 +18,11 @@ CBA球队logo来自于[CBA联赛官方网站](https://www.cbaleague.com/data/#/t
 
 中超联赛球队logo来自于[维基百科球队主页](https://en.wikipedia.org/wiki/Chinese_Super_League).
 
-目前网站中的颜色数据*不是*官方的.
+目前网站中的颜色数据不是官方的。
 
 ## 贡献
 
-Fork这个仓库, 进行修改, 然后提PR.
+Fork这个仓库, 修改代码, 提PR。
 
 - 更新或者添加颜色数据
 
