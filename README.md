@@ -4,6 +4,8 @@ See: https://teamcolor.vercel.app
 
 Team color is built for CBA (Chinese Basketball Association) and CSL (Chinese Super League) fans to look up for the theme color of the team that they support (...or hate!)
 
+*Read this in other languages: [简体中文](README.zh-cn.md).*
+
 ## Run the project
 
 1. Clone or download the repository.
