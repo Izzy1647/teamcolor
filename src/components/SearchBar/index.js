@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import search from '../../utils/search'
 
 import './style.css'
 
-const SearchBar = () => {
+const Bar = () => {
+  const { t } = useTranslation()
   const isMobileScreen = window.matchMedia('(max-width:600px)').matches
   const navigate = useNavigate()
 
@@ -39,11 +41,11 @@ const SearchBar = () => {
   return (
     <section className="searchbar-container">
       <div className="search-widget-wrap">
-        <p className="search-widget-title">查找你的球队</p>
+        <p className="search-widget-title">{t('Search for your team')}</p>
         <form onSubmit={handleSubmit}>
           <input
             className="search-form-input"
-            placeholder="网站中查找"
+            placeholder={t('Search in website')}
             id="team"
             type="text"
           />
@@ -53,7 +55,8 @@ const SearchBar = () => {
                 style={{ color: 'white', marginTop: '12px', fontSize: '18px' }}
                 onClick={handleSubmit}
               >
-                搜索{'>>'}
+                {t('Search')}
+                {'>>'}
               </p>
             </>
           )}
@@ -63,4 +66,10 @@ const SearchBar = () => {
   )
 }
 
-export default SearchBar
+export default function SearchBar() {
+  return (
+    <Suspense fallback="loading">
+      <Bar />
+    </Suspense>
+  )
+}

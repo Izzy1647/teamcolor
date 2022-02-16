@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import isLightColor from '../../../utils/lightColor'
 
 import './style.css'
@@ -20,7 +21,8 @@ const titleStyle = isLightColor => {
  * teams can be from different leagues, this is the reason of line 36,
  * why we need to check if there is a *league* property in advance.
  */
-const Teamlist = ({ teams, league }) => {
+const List = ({ teams, league }) => {
+  const { t } = useTranslation()
   return (
     <>
       {teams.map((team, index) => {
@@ -39,7 +41,7 @@ const Teamlist = ({ teams, league }) => {
                 className="team-title"
                 style={titleStyle(isLightColor(team.theme))}
               >
-                {team.name}
+                {t(team.name)}
               </p>
             </Link>
           </div>
@@ -49,4 +51,10 @@ const Teamlist = ({ teams, league }) => {
   )
 }
 
-export default Teamlist
+export default function Teamlist({ teams, league }) {
+  return (
+    <Suspense fallback="loading">
+      <List teams={teams} league={league} />
+    </Suspense>
+  )
+}
