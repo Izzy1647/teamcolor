@@ -5,7 +5,7 @@ import { cslTeams } from '../data/csl/teams'
  * search the input string in team data, return the target url for redirect
  *
  * @param {string} team
- * @returns {Array} [{team, league, link, theme}]
+ * @returns {Object} {cba: [{team, league, link, theme}], csl: [{team, league, link, theme}]]
  */
 export default function search(team) {
   const searchTeamInLeague = (teamString, league) => {
@@ -28,5 +28,8 @@ export default function search(team) {
   const cbaRes = searchTeamInLeague(team, 'cba')
   const cslRes = searchTeamInLeague(team, 'csl')
 
-  return [...cbaRes, ...cslRes]
+  return {
+    cba: cbaRes,
+    csl: cslRes
+  }
 }

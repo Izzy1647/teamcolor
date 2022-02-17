@@ -7,10 +7,14 @@ import './style.css'
 const SearchResults = () => {
   const { state } = useLocation()
   const { teams } = state
+  const { cba, csl } = teams
 
   return (
     <div className="search-result-container">
-      <Teamlist teams={teams} />
+      <p>CBA</p>
+      <Teamlist teams={cba} />
+      <p>中超</p>
+      <Teamlist teams={csl} />
     </div>
   )
 }
