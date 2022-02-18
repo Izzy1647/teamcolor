@@ -13,26 +13,29 @@ const Bar = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const team = document.getElementById('team').value
-    const searchRes = search(team)
+    const { cba, csl } = search(team)
 
     // no match result for searched string
-    if (!searchRes.length) {
+    if (!cba.length && !csl.length) {
       navigate('/no-match')
     }
 
     // exact one match
-    if (searchRes.length === 1) {
-      const { league, link } = searchRes[0]
+    else if ([...cba, ...csl].length === 1) {
+      const { league, link } = [...cba, ...csl][0]
 
       // make sure league info is added in state as it's required by team detail page
       navigate(link, { state: { league } })
     }
 
-    // multiple match results
-    if (searchRes.length > 1) {
+    // multiple match res
+    else {
       navigate('/results', {
         state: {
-          teams: searchRes
+          teams: {
+            cba,
+            csl
+          }
         }
       })
     }
