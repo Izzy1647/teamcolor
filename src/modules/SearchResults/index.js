@@ -4,10 +4,10 @@ import Teamlist from '../League/Teamlist'
 
 import './style.css'
 
-const ResultBlock = ({ teams, league, imgHeight, imgWidth }) => {
+const ResultBlock = ({ teams }) => {
   return (
     <>
-      {teams.length !== 0 && (
+      {/* {teams.length !== 0 && (
         <div style={{ textAlign: 'center' }}>
           <img
             height={imgHeight}
@@ -17,7 +17,7 @@ const ResultBlock = ({ teams, league, imgHeight, imgWidth }) => {
             style={{ margin: '0.6rem auto' }}
           />
         </div>
-      )}
+      )} */}
 
       <Teamlist teams={teams} />
     </>
@@ -41,9 +41,9 @@ const SearchResults = () => {
           <ResultBlock
             key={index}
             teams={item.teams}
-            league={item.league}
-            imgHeight={item.imgHeight}
-            imgWidth={item.imgWidth}
+            // league={item.league}
+            // imgHeight={item.imgHeight}
+            // imgWidth={item.imgWidth}
           />
         )
       })}
