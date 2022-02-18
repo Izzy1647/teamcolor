@@ -4,17 +4,49 @@ import Teamlist from '../League/Teamlist'
 
 import './style.css'
 
+const ResultBlock = ({ teams, league, imgHeight, imgWidth }) => {
+  return (
+    <>
+      {teams.length !== 0 && (
+        <div style={{ textAlign: 'center' }}>
+          <img
+            height={imgHeight}
+            width={imgWidth}
+            src={`../logos/${league}/${league}_logo.png`}
+            alt="logo"
+            style={{ margin: '0.6rem auto' }}
+          />
+        </div>
+      )}
+
+      <Teamlist teams={teams} />
+    </>
+  )
+}
+
 const SearchResults = () => {
   const { state } = useLocation()
   const { teams } = state
   const { cba, csl } = teams
 
+  const results = [
+    { teams: cba, league: 'cba', imgHeight: 36, imgWidth: 30 },
+    { teams: csl, league: 'csl', imgHeight: 36, imgWidth: 60 }
+  ]
+
   return (
     <div className="search-result-container">
-      <p>CBA</p>
-      <Teamlist teams={cba} />
-      <p>中超</p>
-      <Teamlist teams={csl} />
+      {results.map((item, index) => {
+        return (
+          <ResultBlock
+            key={index}
+            teams={item.teams}
+            league={item.league}
+            imgHeight={item.imgHeight}
+            imgWidth={item.imgWidth}
+          />
+        )
+      })}
     </div>
   )
 }
