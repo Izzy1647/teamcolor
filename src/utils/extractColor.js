@@ -24,6 +24,8 @@ async function writeColors(src, key) {
   const data = await extractColors(src)
   const resData = {
     key,
+    name: key.toUpperCase(),
+    full: '',
     theme: data[0].hex.toUpperCase(),
     colors: data.map(item => item.hex.toUpperCase()),
     link: `/${league}/${key}`
