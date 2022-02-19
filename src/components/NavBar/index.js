@@ -24,7 +24,8 @@ const Nav = () => {
         <Link to="/csl">{t('csl')}</Link>
       </Menu.Item>
       <Menu.Item key="2">
-        <Link to="/esports">{t('esports')}</Link>
+        {/* <Link to="/esports">{t('esports')}</Link> */}
+        <Link to="/lpl">{t('lpl')}</Link>
       </Menu.Item>
       <Menu.Item key="3">
         <Link to="/tools">{t('tools')}</Link>
@@ -48,7 +49,8 @@ const Nav = () => {
             <Link to="/csl">{t('csl')}</Link>
           </li>
           <li>
-            <Link to="/esports">{t('esports')}</Link>
+            {/* <Link to="/esports">{t('esports')}</Link> */}
+            <Link to="/lpl">{t('lpl')}</Link>
           </li>
           <li>
             <Link to="/tools">{t('tools')}</Link>
