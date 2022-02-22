@@ -25,6 +25,7 @@ export default function App() {
           <Route path="/more" element={<Oops type="noSupport" />} />
           <Route path="/no-match" element={<Oops type="noMatch" />} />
           <Route path="/results" element={<SearchResults />} />
+          <Route path="*" element={<Oops type="notFound" />} />
         </Routes>
       </div>
     </Router>

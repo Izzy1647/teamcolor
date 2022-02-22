@@ -15,6 +15,7 @@ const Ooops = ({ type }) => {
     <div className="oops-container">
       <img src={oopsImg} alt="oops" />
       {type === 'noSupport' && <p>{t('Coming soon')}:)</p>}
+      {type === 'notFound' && <p>{t('Page not found')}:)</p>}
       {type === 'noMatch' && (
         <>
           <p>{t('No match result')}:)</p>
