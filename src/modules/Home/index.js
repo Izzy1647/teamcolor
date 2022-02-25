@@ -5,7 +5,7 @@ import './style.css'
 
 const MainPage = () => {
   return (
-    <div>
+    <>
       <SearchBar />
       <div className="logo-container">
         <img
@@ -23,7 +23,7 @@ const MainPage = () => {
           alt="csl"
         />
       </div>
-    </div>
+    </>
   )
 }
 
