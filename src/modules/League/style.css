@@ -2,6 +2,7 @@
   width: 60%;
   height: 600px;
   margin: 3.6rem auto;
+  border: solid 1px red;
 }
 
 .teamlist-container {
