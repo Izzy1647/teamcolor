@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import oopsImg from './oops.png'
 
 import './style.css'
 
-const Oops = ({ type }) => {
+const Ooops = ({ type }) => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const returnToHome = () => {
     navigate('/')
@@ -12,15 +14,16 @@ const Oops = ({ type }) => {
   return (
     <div className="oops-container">
       <img src={oopsImg} alt="oops" />
-      {type === 'noSupport' && <p>网站仍在建设中:)</p>}
+      {type === 'noSupport' && <p>{t('Coming soon')}:)</p>}
+      {type === 'notFound' && <p>{t('Page not found')}:)</p>}
       {type === 'noMatch' && (
         <>
-          <p>没有符合搜索条件的球队:)</p>
+          <p>{t('No match result')}:)</p>
           <p
             onClick={returnToHome}
             style={{ cursor: 'pointer', color: '#102233' }}
           >
-            👈 返回主页重新搜索
+            👈 {t('Go back to home page and search again')}
           </p>
         </>
       )}
@@ -28,4 +31,10 @@ const Oops = ({ type }) => {
   )
 }
 
-export default Oops
+export default function Oops({ type }) {
+  return (
+    <Suspense fallback="loading">
+      <Ooops type={type} />
+    </Suspense>
+  )
+}
