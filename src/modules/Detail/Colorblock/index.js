@@ -19,7 +19,8 @@ const Colorblock = ({ colors }) => {
           fontFamily: 'roboto mono,monospace',
           textTransform: 'uppercase',
           marginBottom: '1.6rem',
-          borderRadius: '8px'
+          borderRadius: '8px',
+          border: "3px blue solid"
         }}
       >
         <div className="color-data-wrapper">

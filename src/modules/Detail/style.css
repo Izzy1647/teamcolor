@@ -1,6 +1,6 @@
 .team-detail-container {
   margin: 3rem 10rem;
-  /* border: red solid 2px; */
+  border: red solid 2px;
   display: flex;
 }
 
