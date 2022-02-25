@@ -6,8 +6,10 @@ import './style.css'
 const MainPage = () => {
   return (
     <>
-      <SearchBar />
-      <div className="logo-container">
+      <div style={{ border: '1px red solid' }}>
+        <SearchBar />
+      </div>
+      <div className="logo-container" style={{ border: '1px red solid' }}>
         <img
           className="logo-image"
           src={`../logos/cba/cba_logo.png`}

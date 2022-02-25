@@ -33,7 +33,7 @@ const Nav = () => {
   )
 
   return (
-    <div className="wrap">
+    <div className="wrap" style={{"border": "1px red solid"}}>
       <ul className="topnav" style={{ margin: 6 }}>
         <li>
           <Link to="/" className="site-title">
