@@ -24,9 +24,12 @@ const Nav = () => {
         <Link to="/csl">{t('csl')}</Link>
       </Menu.Item>
       <Menu.Item key="2">
-        <Link to="/esports">{t('esports')}</Link>
+        <Link to="/kpl">LPL</Link>
       </Menu.Item>
-      <Menu.Item key="3">
+      {/* <Menu.Item key="3">
+        <Link to="/kpl">KPL</Link>
+      </Menu.Item> */}
+      <Menu.Item key="4">
         <Link to="/tools">{t('tools')}</Link>
       </Menu.Item>
     </Menu>
@@ -47,12 +50,18 @@ const Nav = () => {
           <li>
             <Link to="/csl">{t('csl')}</Link>
           </li>
-          <li>
-            <Link to="/esports">{t('esports')}</Link>
+          <li class="dropdown">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a class="dropbtn">{t('esports')}</a>
+            <div class="dropdown-content">
+              <Link to="/lpl">LPL</Link>
+              <Link to="/kpl">KPL</Link>
+            </div>
           </li>
           <li>
             <Link to="/tools">{t('tools')}</Link>
           </li>
+
           {/* <li>
             {lngs.map(item => {
               return (
