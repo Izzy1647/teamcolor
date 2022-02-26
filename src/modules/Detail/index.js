@@ -3,6 +3,7 @@ import { useParams, useLocation } from 'react-router-dom'
 // import TeamShirt from '../../components/TeamShirt'
 import { cbaTeams } from '../../data/cba/teams'
 import { cslTeams } from '../../data/csl/teams'
+import { lplTeams } from '../../data/lpl/teams'
 import Colorblock from './Colorblock'
 
 import './style.css'
@@ -19,6 +20,10 @@ const Detail = () => {
 
   if (league === 'csl') {
     teamInfo = cslTeams.find(item => item.key === team)
+  }
+
+  if (league === 'lpl') {
+    teamInfo = lplTeams.find(item => item.key === team)
   }
 
   return (

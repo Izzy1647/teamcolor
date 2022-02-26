@@ -13,16 +13,16 @@ const Bar = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const team = document.getElementById('team').value
-    const { cba, csl } = search(team)
+    const { cba, csl, lpl } = search(team)
 
     // no match result for searched string
-    if (!cba.length && !csl.length) {
+    if (!cba.length && !csl.length && !lpl.length) {
       navigate('/no-match')
     }
 
     // exact one match
-    else if ([...cba, ...csl].length === 1) {
-      const { league, link } = [...cba, ...csl][0]
+    else if ([...cba, ...csl, ...lpl].length === 1) {
+      const { league, link } = [...cba, ...csl, ...lpl][0]
 
       // make sure league info is added in state as it's required by team detail page
       navigate(link, { state: { league } })
@@ -34,7 +34,8 @@ const Bar = () => {
         state: {
           teams: {
             cba,
-            csl
+            csl,
+            lpl
           }
         }
       })
