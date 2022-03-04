@@ -22,6 +22,7 @@ export default function App() {
           <Route path="/csl/:team" element={<Detail />} />
           <Route path="/lpl" element={<League type="lpl" />} />
           <Route path="/lpl/:team" element={<Detail />} />
+          <Route path="/kpl" element={<Oops type="noSupport" />} />
           <Route path="/esports" element={<Oops type="noSupport" />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/more" element={<Oops type="noSupport" />} />
