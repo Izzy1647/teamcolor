@@ -4,6 +4,7 @@
   border-radius: 4px;
   flex: 40%;
   width: 100%;
+  max-width: 48%;
 }
 
 .team-title {
@@ -18,5 +19,6 @@
   .team-block {
     flex: auto;
     margin: 6px 0;
+    max-width: 100%;
   }
 }
