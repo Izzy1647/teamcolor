@@ -6,7 +6,7 @@ import isLightColor from '../../../utils/lightColor'
 import './style.css'
 
 const titleStyle = isLightColor => {
-  return isLightColor ? { color: 'black' } : { color: 'white' }
+  return { color: isLightColor ? 'black' : 'white' }
 }
 
 /**
@@ -21,17 +21,17 @@ const titleStyle = isLightColor => {
  * teams can be from different leagues, this is the reason of line 36,
  * why we need to check if there is a *league* property in advance.
  */
-const List = ({ teams, league }) => {
+const List = ({ teams, league, type }) => {
   const { t } = useTranslation()
   return (
     <>
       {teams.map((team, index) => {
+        const teamBlockStyle = {
+          background: team.theme,
+          maxWidth: type === 'search' ? '100%' : '48%'
+        }
         return (
-          <div
-            key={index}
-            className="team-block"
-            style={{ background: team.theme }}
-          >
+          <div key={index} className="team-block" style={teamBlockStyle}>
             <Link
               to={team.link}
               // technical debt down here!!
@@ -51,10 +51,10 @@ const List = ({ teams, league }) => {
   )
 }
 
-export default function Teamlist({ teams, league }) {
+export default function Teamlist({ teams, league, type }) {
   return (
     <Suspense fallback="loading">
-      <List teams={teams} league={league} />
+      <List teams={teams} league={league} type={type} />
     </Suspense>
   )
 }
