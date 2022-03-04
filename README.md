@@ -2,7 +2,7 @@
 
 See: https://teamcolor.vercel.app
 
-Team color is built for CBA (Chinese Basketball Association) and CSL (Chinese Super League) fans to look up for the theme color of the team that they support (...or hate!)
+Team color is built for CBA (Chinese Basketball Association), CSL (Chinese Super League) and LPL (League of Legends Pro League) fans to look up for the theme color of the team that they support (...or hate!)
 
 *Read this in other languages: [简体中文](README.zh-cn.md).*
 
@@ -17,6 +17,8 @@ Team color is built for CBA (Chinese Basketball Association) and CSL (Chinese Su
 CBA team logos are from the [official website of Chinese Basketball Association](https://www.cbaleague.com/data/#/teams).
 
 CSL team logos are from [wikipedia pages](https://en.wikipedia.org/wiki/Chinese_Super_League).
+
+LPL team logos are from the [official website by Tencent](https://lpl.qq.com/es/team.shtml)
 
 Colors are _not_ official so far.
 

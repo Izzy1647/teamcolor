@@ -2,7 +2,7 @@
 
 使用: https://teamcolor.vercel.app
 
-在这个网站中，你可以查看你支持的球队的主题色的HEX、RGB、CMYK表示。目前支持查询CBA联赛和中超联赛的球队。
+在这个网站中，你可以查看你支持的球队的主题色的HEX、RGB、CMYK表示。目前支持查询CBA联赛、LPL联赛和中超联赛的队伍。
 
 *其他语言版本：[English](README.md).*
 
@@ -18,6 +18,8 @@ CBA球队logo来自于[CBA联赛官方网站](https://www.cbaleague.com/data/#/t
 
 中超联赛球队logo来自于[维基百科球队主页](https://en.wikipedia.org/wiki/Chinese_Super_League).
 
+LPL队伍logo来自于[腾讯LPL联赛官方主页](https://lpl.qq.com/es/team.shtml).
+
 目前网站中的颜色数据不是官方的。
 
 ## 贡献
@@ -31,7 +33,7 @@ Fork这个仓库, 修改代码, 提PR。
 ## 使用 `/utils/extractColor.js`
 这个脚本用来从球队logo图片自动提取颜色。
 
-1. 往`/public/logos/${league}`文件夹下添加球队logo的png格式的图片。
+1. 往`/public/logos/${league}`文件夹下添加各支球队logo的png格式的图片。
 
 2. 在`/utils/extractColor.js`脚本中改变`league`的值，对应刚刚添加的联赛名称。
 
