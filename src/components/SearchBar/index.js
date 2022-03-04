@@ -5,6 +5,11 @@ import search from '../../utils/search'
 
 import './style.css'
 
+const getRandomBgColor = () => {
+  const colors = ['#034694', '#4B7CAD', '#3E8A63', '#8F6DB8', '#BA5E49']
+  return { backgroundColor: colors[Math.floor(Math.random() * 5)] }
+}
+
 const Bar = () => {
   const { t } = useTranslation()
   const isMobileScreen = window.matchMedia('(max-width:600px)').matches
@@ -43,7 +48,7 @@ const Bar = () => {
   }
 
   return (
-    <section className="searchbar-container">
+    <section className="searchbar-container" style={getRandomBgColor()}>
       <div className="search-widget-wrap">
         <p className="search-widget-title">{t('Search for your team')}</p>
         <form onSubmit={handleSubmit}>

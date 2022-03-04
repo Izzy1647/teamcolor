@@ -8,6 +8,14 @@ test('hex to rgb: ff2ed2', () => {
   expect(hexToRgb('ff2ed2')).toEqual([255, 46, 210])
 })
 
+test('hex to rgb: FF2ED2', () => {
+  expect(hexToRgb('FF2ED2')).toEqual([255, 46, 210])
+})
+
+test('hex to rgb: #7BE9E6', () => {
+  expect(hexToRgb('#7BE9E6')).toEqual([123, 233, 230])
+})
+
 test('hex to rgb: 000000', () => {
   expect(hexToRgb('000000')).toEqual([0, 0, 0])
 })
