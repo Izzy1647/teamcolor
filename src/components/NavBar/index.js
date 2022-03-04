@@ -24,7 +24,7 @@ const Nav = () => {
         <Link to="/csl">{t('csl')}</Link>
       </Menu.Item>
       <Menu.Item key="2">
-        <Link to="/kpl">LPL</Link>
+        <Link to="/lpl">LPL</Link>
       </Menu.Item>
       {/* <Menu.Item key="3">
         <Link to="/kpl">KPL</Link>

@@ -19,7 +19,7 @@ const ResultBlock = ({ teams }) => {
         </div>
       )} */}
 
-      <Teamlist teams={teams} />
+      <Teamlist teams={teams} type="search"/>
     </>
   )
 }
@@ -27,11 +27,13 @@ const ResultBlock = ({ teams }) => {
 const SearchResults = () => {
   const { state } = useLocation()
   const { teams } = state
-  const { cba, csl } = teams
+  const { cba, csl, lpl } = teams
 
   const results = [
     { teams: cba, league: 'cba', imgHeight: 36, imgWidth: 30 },
-    { teams: csl, league: 'csl', imgHeight: 36, imgWidth: 60 }
+    { teams: csl, league: 'csl', imgHeight: 36, imgWidth: 60 },
+    { teams: lpl, league: 'lpl', imgHeight: 36, imgWidth: 60 }
+
   ]
 
   return (
