@@ -28,6 +28,17 @@ Fork the repo, make changes, and create pull requests.
 
 Team color data are stored in `/src/data/${league}/teams.js`, as an array of objects. In one specific object: `theme` property indicates the main color, like blue for Chelsea, red for Manchester United, etc; `colors` array saves all related colors of the team (but always with the theme color as the first element), e.g., the color of home/away/third shirts, etc. More details available in the file.
 
+## On using `/utils/extractColor.js`
+The script is used to extract color from team logo images automatically.
+
+1. Add logo images (in `.png` format) to `/public/logos/${league}` folder.
+
+2. In `/utils/extractColor.js`, modify the `league` value to the league that is being introduced.
+
+3. Run `node extractColor.js` under the `utils` directory.
+
+4. Extracted color data will be added to `src/data/${league}/teams.js`.
+
 ## Possible future tasks
 
 - Adapt esports leagues in China (kpl, etc.)
