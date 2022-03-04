@@ -18,7 +18,7 @@ CBA team logos are from the [official website of Chinese Basketball Association]
 
 CSL team logos are from [wikipedia pages](https://en.wikipedia.org/wiki/Chinese_Super_League).
 
-LPL team logos are from the [official website by Tencent](https://lpl.qq.com/es/team.shtml)
+LPL team logos are from the [official website by Tencent](https://lpl.qq.com/es/team.shtml).
 
 Colors are _not_ official so far.
 
