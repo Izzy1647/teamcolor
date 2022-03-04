@@ -61,7 +61,7 @@ const Bar = () => {
           {isMobileScreen && (
             <>
               <p
-                style={{ color: 'white', marginTop: '12px', fontSize: '18px' }}
+                style={{ color: 'white', marginTop: '16px', fontSize: '18px' }}
                 onClick={handleSubmit}
               >
                 {t('Search')}

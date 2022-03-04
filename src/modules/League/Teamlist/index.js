@@ -23,12 +23,16 @@ const titleStyle = isLightColor => {
  */
 const List = ({ teams, league, type }) => {
   const { t } = useTranslation()
+
+  const isMobileScreen = window.matchMedia('(max-width:600px)').matches
+  const displayFullWidth = isMobileScreen || type === 'search'
+
   return (
     <>
       {teams.map((team, index) => {
         const teamBlockStyle = {
           background: team.theme,
-          maxWidth: type === 'search' ? '100%' : '48%'
+          maxWidth: displayFullWidth ? '100%' : '48%'
         }
         return (
           <div key={index} className="team-block" style={teamBlockStyle}>
