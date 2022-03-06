@@ -53,7 +53,7 @@ export const cbaTeams = [
     full: '广东宏远华南虎俱乐部',
     theme: '#19315B',
     link: '/cba/guangdong',
-    colors: ['#19315B', '#D40000', '#FCEF50', '#FFFFFF', '#322C2B']
+    colors: ['#19315B', '#D40000', '#FCEF50', '#322C2B']
   },
   {
     key: 'liaoning',
