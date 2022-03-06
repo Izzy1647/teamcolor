@@ -1,10 +1,10 @@
 import React from 'react'
 import { useParams, useLocation } from 'react-router-dom'
-// import TeamShirt from '../../components/TeamShirt'
 import { cbaTeams } from '../../data/cba/teams'
 import { cslTeams } from '../../data/csl/teams'
 import { lplTeams } from '../../data/lpl/teams'
-import Colorblock from './Colorblock'
+
+import Colorblock from '../../components/Colorblock'
 
 import './style.css'
 
