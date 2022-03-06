@@ -61,7 +61,7 @@ export const cbaTeams = [
     full: '辽宁沈阳三生飞豹俱乐部',
     theme: '#3E823E',
     link: '/cba/liaoning',
-    colors: ['#3E823E', '#000000', 'FFFFFF', '#E8A439']
+    colors: ['#3E823E', '#000000', '#FFFFFF', '#E8A439']
   },
   {
     key: 'nanjing',
