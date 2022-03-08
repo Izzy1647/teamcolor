@@ -6,8 +6,8 @@ import search from '../../utils/search'
 import './style.css'
 
 const getRandomBgColor = () => {
-  const colors = ['#034694', '#4B7CAD', '#3E8A63', '#8F6DB8', '#BA5E49']
-  return { backgroundColor: colors[Math.floor(Math.random() * 5)] }
+  const colors = ['#034694', '#4B7CAD', '#3E8A63', '#8F6DB8', '#BA5E49', '#7B8CAD', '#17373A']
+  return { backgroundColor: colors[Math.floor(Math.random() * colors.length)] }
 }
 
 const Bar = () => {
