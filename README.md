@@ -35,13 +35,11 @@ The script is used to extract color from team logo images automatically.
 
 1. Add logo images (in `.png` format) to `/public/logos/${league}` folder.
 
-2. In `/utils/extractColor.js`, modify the `league` value to the league that is being introduced.
+2. Run `node extractColor.js ${league}` under the `utils` directory.
 
-3. Run `node extractColor.js` under the `utils` directory.
+3. Extracted color data will be added to `src/data/${league}/teams.js`.
 
-4. Extracted color data will be added to `src/data/${league}/teams.js`.
-
-## Possible future tasks
+## Possible future updates
 
 - Adapt esports leagues in China (kpl, etc.)
 - Multi-language support

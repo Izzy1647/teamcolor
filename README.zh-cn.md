@@ -35,11 +35,9 @@ Fork这个仓库, 修改代码, 提PR。
 
 1. 往`/public/logos/${league}`文件夹下添加各支球队logo的png格式的图片。
 
-2. 在`/utils/extractColor.js`脚本中改变`league`的值，对应刚刚添加的联赛名称。
+2. 在`utils`目录下运行`node extractColor.js ${league}`。
 
-3. 在`utils`目录下运行`node extractColor.js`。
-
-4. 提取好的数据就会被添加到`src/data/${league}/teams.js`中了.
+3. 提取好的数据就会被添加到`src/data/${league}/teams.js`中了.
 
 ## 未来可能的更新
 
