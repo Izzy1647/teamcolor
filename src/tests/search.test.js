@@ -23,7 +23,8 @@ test('search: 上海', () => {
         name: '上海海港',
         theme: '#C3281C'
       }
-    ]
+    ],
+    lpl: []
   })
 })
 
@@ -45,10 +46,33 @@ test('search: 北京', () => {
     ],
     csl: [
       { league: 'csl', link: '/csl/guoan', name: '北京国安', theme: '#388022' }
+    ],
+    lpl: [
+      { league: 'lpl', link: '/lpl/jdg', name: '北京JDG', theme: '#C8102E' }
+    ]
+  })
+})
+
+test('search: lgd', () => {
+  expect(search('lgd')).toEqual({
+    cba: [],
+    csl: [],
+    lpl: [
+      { league: 'lpl', link: '/lpl/lgd', name: '杭州LGD', theme: '#0D408F' }
+    ]
+  })
+})
+
+test('search: lGD', () => {
+  expect(search('lGD')).toEqual({
+    cba: [],
+    csl: [],
+    lpl: [
+      { league: 'lpl', link: '/lpl/lgd', name: '杭州LGD', theme: '#0D408F' }
     ]
   })
 })
 
 test('search: shanghai', () => {
-  expect(search('shanghai')).toEqual({ cba: [], csl: [] })
+  expect(search('shanghai')).toEqual({ cba: [], csl: [], lpl: [] })
 })

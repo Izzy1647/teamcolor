@@ -9,19 +9,12 @@ import { lplTeams } from '../data/lpl/teams'
  * @returns {Object} {cba: [{team, league, link, theme}], csl: [{team, league, link, theme}]]
  */
 export default function search(team) {
-  const searchTeamInLeague = (teamString, league) => {
-    let teamList
-    if (league === 'cba') {
-      teamList = cbaTeams
-    } else if (league === 'csl') {
-      teamList = cslTeams
-    } else if (league === 'lpl') {
-      teamList = lplTeams
-    }
-
+  const searchTeamInLeague = (teamString, league, teamList) => {
     return teamList
       .filter(
-        item => item.full.includes(teamString) || item.name.includes(teamString)
+        item =>
+          item.full.toUpperCase().includes(teamString.toUpperCase()) ||
+          item.name.toUpperCase().includes(teamString.toUpperCase())
       )
       .map(teamInfo => {
         return {
@@ -33,11 +26,9 @@ export default function search(team) {
       })
   }
 
-  console.log("LPL:", searchTeamInLeague(team, 'lpl'))
-
   return {
-    cba: searchTeamInLeague(team, 'cba'),
-    csl: searchTeamInLeague(team, 'csl'),
-    lpl: searchTeamInLeague(team, 'lpl')
+    cba: searchTeamInLeague(team, 'cba', cbaTeams),
+    csl: searchTeamInLeague(team, 'csl', cslTeams),
+    lpl: searchTeamInLeague(team, 'lpl', lplTeams)
   }
 }

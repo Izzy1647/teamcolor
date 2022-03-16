@@ -1,6 +1,6 @@
 import React from 'react'
-import { hexToCMYK, hexToRgb } from '../../../utils/convertColor'
-import isLightColor from '../../../utils/lightColor'
+import { hexToCMYK, hexToRgb } from '../../utils/convertColor'
+import isLightColor from '../../utils/lightColor'
 
 import './style.css'
 
@@ -19,7 +19,8 @@ const Colorblock = ({ colors }) => {
           fontFamily: 'roboto mono,monospace',
           textTransform: 'uppercase',
           marginBottom: '1.6rem',
-          borderRadius: '8px'
+          borderRadius: '8px',
+          border: color === '#FFFFFF' ? '0.2px grey solid' : '0'
         }}
       >
         <div className="color-data-wrapper">

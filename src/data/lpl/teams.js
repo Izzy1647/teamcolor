@@ -2,15 +2,15 @@ export const lplTeams = [
   {
     key: 'al',
     name: 'AL',
-    full: 'AnyonesLegend',
+    full: "Anyone's Legend",
     theme: '#C32E2B',
-    colors: ['#C32E2B', '#D6736E', '#1D120F', '#EBC2B8', '#504A48'],
+    colors: ['#C32E2B', '#1D120F'],
     link: '/lpl/al'
   },
   {
     key: 'blg',
     name: 'BLG平安银行',
-    full: 'BilibiliGaming',
+    full: 'Bilibili Gaming',
     theme: '#48BEDF',
     colors: ['#48BEDF', '#E96E8F'],
     link: '/lpl/blg'
@@ -18,15 +18,15 @@ export const lplTeams = [
   {
     key: 'edg',
     name: 'EDG',
-    full: 'EDWARDGAMING',
+    full: 'Edward Gaming',
     theme: '#221815',
-    colors: ['#221815', '#E0E0DE', '#716C6A'],
+    colors: ['#221815', '#E0E0DE'],
     link: '/lpl/edg'
   },
   {
     key: 'fpx',
     name: 'FPX',
-    full: 'FunPlusPhoenix',
+    full: 'FunPlus Phoenix',
     theme: '#FA0F00',
     colors: ['#FA0F00'],
     link: '/lpl/fpx'
@@ -34,15 +34,15 @@ export const lplTeams = [
   {
     key: 'ig',
     name: 'IG',
-    full: 'InvictusGaming',
+    full: 'Invictus Gaming',
     theme: '#FFFFFF',
-    colors: ['#FFFFFF', '#040707', '#C1C1C1', '#4B4B4B', '#898989'],
+    colors: ['#FFFFFF', '#040707'],
     link: '/lpl/ig'
   },
   {
     key: 'jdg',
     name: '北京JDG',
-    full: 'BeijingJingdongGaming',
+    full: 'JD Gaming',
     theme: '#C8102E',
     colors: ['#C8102E'],
     link: '/lpl/jdg'
@@ -50,47 +50,31 @@ export const lplTeams = [
   {
     key: 'lgd',
     name: '杭州LGD',
-    full: 'HangzhouLGDGAMING',
-    theme: '#FF0406',
-    colors: [
-      '#FF0406',
-      '#0D408F',
-      '#FFFFFF',
-      '#FF6465',
-      '#9A1940',
-      '#5176AF',
-      '#97ADCF'
-    ],
+    full: 'LGD Gaming',
+    theme: '#0D408F',
+    colors: ['#FF0406', '#0D408F', '#FFFFFF'],
     link: '/lpl/lgd'
   },
   {
     key: 'lng',
     name: '苏州LNG',
-    full: 'SuzhouLNGEsports',
+    full: 'LNG Esports',
     theme: '#DD235B',
-    colors: [
-      '#DD235B',
-      '#19254B',
-      '#307FC2',
-      '#71C8D5',
-      '#EB779E',
-      '#89567B',
-      '#FFFFFF'
-    ],
+    colors: ['#DD235B', '#19254B', '#307FC2'],
     link: '/lpl/lng'
   },
   {
     key: 'omg',
     name: 'OMG',
-    full: 'OhMyGod',
+    full: 'Oh My God',
     theme: '#000000',
-    colors: ['#000000', '#FFFFFF', '#C2C2C2', '#6D6D6D'],
+    colors: ['#000000', '#FFFFFF'],
     link: '/lpl/omg'
   },
   {
     key: 'ra',
     name: 'RA',
-    full: '',
+    full: 'Rare Atom',
     theme: '#AC4FC6',
     colors: ['#AC4FC6'],
     link: '/lpl/ra'
@@ -98,7 +82,7 @@ export const lplTeams = [
   {
     key: 'rng',
     name: 'RNG',
-    full: 'RoyalNeverGiveUp',
+    full: 'Royal Never Give Up',
     theme: '#B4926A',
     colors: ['#B4926A'],
     link: '/lpl/rng'
@@ -106,7 +90,7 @@ export const lplTeams = [
   {
     key: 'tes',
     name: 'TES',
-    full: 'TOPESPORTS',
+    full: 'Top Esports',
     theme: '#FF3E24',
     colors: ['#FF3E24'],
     link: '/lpl/tes'
@@ -114,7 +98,7 @@ export const lplTeams = [
   {
     key: 'tt',
     name: 'TT',
-    full: 'THUNDERTALKGAMING',
+    full: 'ThunderTalk Gaming',
     theme: '#1ED2EC',
     colors: ['#1ED2EC'],
     link: '/lpl/tt'
@@ -122,15 +106,15 @@ export const lplTeams = [
   {
     key: 'up',
     name: 'UP',
-    full: 'UltraPrime',
+    full: 'Ultra Prime Esports',
     theme: '#5643DF',
-    colors: ['#5643DF', '#50E6E6', '#9E8FF5', '#FFFFFF', '#3A8A8A', '#212121'],
+    colors: ['#5643DF', '#50E6E6', '#212121'],
     link: '/lpl/up'
   },
   {
     key: 'v5',
     name: '深圳V5',
-    full: 'ShenzhenVictoryFive',
+    full: 'Victory Five',
     theme: '#B69265',
     colors: ['#B69265'],
     link: '/lpl/v5'
@@ -138,15 +122,15 @@ export const lplTeams = [
   {
     key: 'wbg',
     name: 'WBG',
-    full: 'WeiboGaming',
+    full: 'Weibo Gaming',
     theme: '#E60012',
-    colors: ['#E60012', '#F39700', '#F4A595', '#FFFFFF', '#221815', '#6B6665'],
+    colors: ['#E60012', '#F39700'],
     link: '/lpl/wbg'
   },
   {
     key: 'we',
     name: '西安WE',
-    full: 'XianTeamWE',
+    full: 'Team WE',
     theme: '#DF0914',
     colors: ['#DF0914'],
     link: '/lpl/we'

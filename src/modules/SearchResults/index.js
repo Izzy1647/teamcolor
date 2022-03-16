@@ -19,7 +19,7 @@ const ResultBlock = ({ teams }) => {
         </div>
       )} */}
 
-      <Teamlist teams={teams} />
+      <Teamlist teams={teams} type="search"/>
     </>
   )
 }
